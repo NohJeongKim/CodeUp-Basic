@@ -1,4 +1,4 @@
-### CodeUp: Python Algorithm 
+### CodeUp: Python 기초 Algorithm  
 * ```Python 기초 100제```
 * ```기초1. 출력문```
 * ```기초2. 입출력문 및 연산자```
