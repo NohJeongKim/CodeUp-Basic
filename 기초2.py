@@ -22,3 +22,18 @@ a,b=input().split()
 a=int(a)
 b=int(b)
 print(format((a*b)/2, '.1f'))
+
+# 1122: 초를 분과 초로 변환하기
+second=int(input())
+m=second//60
+s=second%60
+print(m, s)
+
+# 1123: 섭씨 온도에서 화씨 온도로 변환하기
+celsius_temp=int(input())
+fahrenheit_temp=9/5*celsius_temp+32
+print(format(fahrenheit_temp, '.3f'))
+
+# 1125: 10진수에서 8진수와 16진수로 변환하기
+n=int(input())
+print(format(n,'o'), format(n,'X'))
