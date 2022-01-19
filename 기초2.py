@@ -90,3 +90,39 @@ def compare(a,b):
         return 1
     
 print(compare(a,b))
+
+# 1143: 비트 연산자
+from sys import stdin
+num1, num2=map(int, input().split())
+print(num1&num2)
+
+# 1144: 비트 연산자
+from sys import stdin
+num1, num2=map(int, input().split())
+print(num1|num2)
+
+# 1147: 비트 연산자
+from sys import stdin
+num1, num2=map(int, input().split())
+print(num1<<num2)
+
+# 1148: 비트 연산자
+from sys import stdin
+num1, num2=map(int, input().split())
+print(num1>>num2)
+
+# 1150: 세 숫자 중에서 가장 작은 수 구하기
+a,b,c=map(int, input().split())
+def compare(a,b,c):
+    if a>b:
+        if b>c:
+            return c
+        else:
+            return b
+    else:
+        if a>c:
+            return c
+        else:
+            return a
+            
+print(compare(a,b,c))
