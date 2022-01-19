@@ -37,3 +37,56 @@ print(format(fahrenheit_temp, '.3f'))
 # 1125: 10진수에서 8진수와 16진수로 변환하기
 n=int(input())
 print(format(n,'o'), format(n,'X'))
+
+# 1135: 조건에 맞는 숫자 출력하기
+A1.
+a,b=map(int, input().split())
+def compare(a,b):
+    if a>=b:
+        return 1
+    else:
+        return 0
+        
+print(compare(a,b))
+
+A2.
+a,b=map(int, input().split())
+if a>=b:
+    print(1)
+else:
+    print(0)
+
+# 1138: 0,1을 반대로 출력하기
+A1.
+n=int(input())
+print(int(not n))
+
+A2.
+n=int(input())
+def compare(n):
+    if n==0:
+        return 1
+    else:
+        return 0
+        
+print(compare(n))
+
+# 1139
+a,b=map(int, input().split())
+def compare(a,b):
+    if a==1 and b==1:
+        return 1
+    else:
+        return 0
+    
+print(compare(a,b))
+
+# 1140
+a,b=map(int, input().split())
+def compare(a,b):
+    if a==0 and b==0:
+        return 0
+    else:
+        return 1
+    
+print(compare(a,b))
