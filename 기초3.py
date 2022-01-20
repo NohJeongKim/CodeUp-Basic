@@ -110,3 +110,27 @@ a,b,c=map(int, stdin.readline().split())
 list1=[a,b,c]
 list1=sorted(list1)
 print(list1[1])
+
+# 1168
+ymd, s=input().split()
+s=int(s)
+if (s==1) or (s==2):
+    year='19'+ymd[:2]
+else:
+    year='20'+ymd[:2]
+print(2012-int(year)+1)
+
+# 1169
+age=int(input())
+year=2013-age
+year=str(year)
+if year[:2]=='19':
+    if year[-2]=='0': # 만약에 출생년도가 2000인 경우
+        print(year[-1], 1) # 0 1을 출력하기
+    else:
+        print(year[2:], 1)
+else:
+    if year[-2]=='0':
+        print(year[-1], 3)
+    else:
+        print(year[2:], 3)
