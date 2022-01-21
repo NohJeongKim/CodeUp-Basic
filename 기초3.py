@@ -104,7 +104,6 @@ else:
     print("no")
 
 # 1167
-A1.
 from sys import stdin
 a,b,c=map(int, stdin.readline().split())
 list1=[a,b,c]
