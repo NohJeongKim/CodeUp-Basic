@@ -134,3 +134,65 @@ else:
         print(year[-1], 3)
     else:
         print(year[2:], 3)
+
+# 1170
+grade, _class, num=input().split()
+if int(num)<10:
+    print(grade,_class,'0'+num, sep='')
+else:
+    print(grade, _class, num, sep='')
+
+# 1171
+A1.
+grade, _class, num=input().split()
+if 1<=int(_class)<=9:
+    if 1<=int(num)<=9:
+        print(grade, '0'+_class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, '0'+_class, '0'+num, sep='')
+    else:
+        print(grade, '0'+_class, num, sep='')
+else:
+    if 1<=int(num)<=9:
+        print(grade, _class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, _class, '0'+num, sep='')
+    else:
+        print(grade, _class, num, sep='')
+
+A2.
+from sys import stdin
+grade, _class, num= map(str, stdin.readline().split())
+if 1<=int(_class)<=9:
+    if 1<=int(num)<=9:
+        print(grade, '0'+_class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, '0'+_class, '0'+num, sep='')
+    else:
+        print(grade, '0'+_class, num, sep='')
+else:
+    if 1<=int(num)<=9:
+        print(grade, _class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, _class, '0'+num, sep='')
+    else:
+        print(grade, _class, num, sep='')
+
+A3.
+from sys import stdin
+grade, _class, num= stdin.readline().split()
+if 1<=int(_class)<=9:
+    if 1<=int(num)<=9:
+        print(grade, '0'+_class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, '0'+_class, '0'+num, sep='')
+    else:
+        print(grade, '0'+_class, num, sep='')
+else:
+    if 1<=int(num)<=9:
+        print(grade, _class, '00'+num, sep='')
+    elif 10<=int(num)<=99:
+        print(grade, _class, '0'+num, sep='')
+    else:
+        print(grade, _class, num, sep='')
+
