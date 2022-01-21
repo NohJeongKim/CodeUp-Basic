@@ -196,3 +196,90 @@ else:
     else:
         print(grade, _class, num, sep='')
 
+# 1172
+from sys import stdin
+a,b,c=map(int, stdin.readline().split())
+_list=[a,b,c]
+_list=sorted(_list)
+for ii in _list:
+    print(ii, end=' ')
+
+# 1173
+from sys import stdin
+hour, minute=map(int, stdin.readline().split())
+if minute<30:
+    if hour != 0:
+        print(hour-1, 30+minute)
+    else:
+        print(23, 30+minute)
+else:
+    print(hour, minute-30)
+    
+# 1180
+str=input()
+if 1<=int(str)<=9:
+    n=str+'0'
+    if int(n)*2>100:
+        if (int(n)*2)%100>50:
+            print((int(n)*2)%100, 'OH MY GOD')
+        else:
+            print((int(n)*2)%100, 'GOOD')
+    else:
+        if int(n)*2>50:
+            print(int(n)*2, 'OH MY GOD')
+        else:
+            print(int(n)*2, 'GOOD')
+else:
+    n=str[::-1]
+    if int(n)*2>100:
+        if (int(n)*2)%100>50:
+            print((int(n)*2)%100, 'OH MY GOD')
+        else:
+            print((int(n)*2)%100, 'GOOD')
+    else:
+        if int(n)*2>50:
+            print(int(n)*2, 'OH MY GOD')
+        else:
+            print(int(n)*2, 'GOOD')
+            
+# 1202
+score=int(input())
+if score>=90:
+    print('A')
+elif score>=80:
+    print('B')
+elif score>=70:
+    print('C')
+elif score>=60:
+    print('D')
+else:
+    print('F')
+    
+# 1203
+bmi=int(input())
+if bmi>20:
+    print('비만')
+elif 10<bmi<=20:
+    print('과체중')
+else:
+    print('정상')
+
+# 1204
+num=int(input())
+if 11<=num<=19:
+    print(num, 'th', sep='')
+else:
+    if (num%10)==1:
+        print(num, 'st', sep='')
+    elif (num%10)==2:
+        print(num, 'nd', sep='')
+    elif (num%10)==3:
+        print(num, 'rd', sep='')
+    else:
+        print(num, 'th', sep='')
+
+# 1205
+a,b=map(float, input().split())
+_list=[a+b, b+a, a-b, b-a, a*b, b*a, a/b, b/a, a**b, b**a]
+_max=max(_list)
+print(format(_max, '.6f'))
