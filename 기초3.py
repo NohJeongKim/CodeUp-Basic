@@ -378,3 +378,62 @@ if _list[0]+_list[1]>_list[-1]:
         print('삼각형')
 else:
     print('삼각형아님')
+
+# 1222
+from sys import stdin
+time, score1, score2=map(int, stdin.readline().split())
+
+goal=0
+while time<90:
+    goal+=1
+    time+=5
+score1+=goal
+
+if score1>score2:
+    print('win')
+elif score1<score2:
+    print('lose')
+else:
+    print('same')
+    
+# 1224
+from sys import stdin
+a,b,c,d=map(int, stdin.readline().split())
+
+if(a / b > c / d):
+    print('>')
+elif(a / b == c / d):
+    print('=')
+else:
+    print('<')
+
+# 1228
+height, weight=map(float, input().split())
+standard_weight=(height-100)*0.9
+obesity=((weight-standard_weight)*100)/standard_weight
+
+if obesity<=10:
+    print('정상')
+elif 10<obesity<=20:
+    print('과체중')
+else:
+    print('비만')
+
+# 1229
+height, weight=map(float, input().split())
+
+if height<150:
+    standard_weight=height-100
+elif 150<=height<160:
+    standard_weight=(height-150)/2+50
+else:
+    standard_weight=(height-100)*0.9
+    
+obesity=((weight-standard_weight)*100)/standard_weight
+
+if obesity<=10:
+    print('정상')
+elif 10<obesity<=20:
+    print('과체중')
+else:
+    print('비만')
