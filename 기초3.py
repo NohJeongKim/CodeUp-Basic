@@ -282,3 +282,99 @@ a,b=map(float, input().split())
 _list=[a+b, b+a, a-b, b-a, a*b, b*a, a/b, b/a, a**b, b**a]
 _max=max(_list)
 print(format(_max, '.6f'))
+
+# 1206
+a,b=map(int, input().split())
+if a>b:
+    if a%b==0:
+        x=a//b
+        print(f'{b}*{x}={a}')
+    else:
+        print('none')
+else:
+    if b%a==0:
+        x=b//a
+        print(f'{a}*{x}={b}')
+    else:
+        print('none')
+        
+# 1207
+from sys import stdin
+a,b,c,d=map(int, stdin.readline().split())
+_list=[a,b,c,d]
+
+count_1=0
+for ii in _list:
+    if ii == 1:
+        count_1+=1
+        
+if count_1==0:
+    print('모')
+elif count_1==1:
+    print('도')
+elif count_1==2:
+    print('개')
+elif count_1==3:
+    print('걸')
+else:
+    print('윷')
+    
+# 1210
+a,b=map(int, input().split())
+menu={1:400, 2:340, 3:170, 4:100, 5:70}
+if menu[a]+menu[b]>500:
+    print('angry')
+else:
+    print('no angry')
+
+# 1212
+from sys import stdin
+a,b,c=map(int, stdin.readline().split())
+_list=[a,b,c]
+_list=sorted(_list)
+if _list[0]+_list[1]>_list[-1]:
+    print('yes')
+else:
+    print('no')
+    
+# 1214
+from sys import stdin
+year, month=map(int, stdin.readline().split())
+
+if month==2:
+    if (year%400==0) or ((year%4==0)&(year%100!=0)):
+        print(29)
+    else:
+        print(28)
+elif month in [1,3,5,7,8,10,12]:
+    print(31)
+else:
+    print(30)
+
+# 1216
+not_adv, adv, cost=map(int, input().split())
+do_adv=adv-cost
+if do_adv>not_adv:
+    print('advertise')
+elif do_adv<not_adv:
+    print('do not advertise')
+else:
+    print('does not matter')
+
+# 1218
+from sys import stdin
+a,b,c=map(int, stdin.readline().split())
+_list=[a,b,c]
+_list=sorted(_list)
+
+if _list[0]+_list[1]>_list[-1]:
+    if _list[0]==_list[1]==_list[-1]:
+        print('정삼각형')
+    elif (_list[0]==_list[1])or(_list[1]==_list[-1]):
+        print('이등변삼각형')
+    elif _list[0]**2+_list[1]**2==_list[-1]**2:
+        print('직각삼각형')
+    else:
+        print('삼각형')
+else:
+    print('삼각형아님')
