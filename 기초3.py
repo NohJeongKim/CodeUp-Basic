@@ -437,3 +437,16 @@ elif 10<obesity<=20:
     print('과체중')
 else:
     print('비만')
+
+# 1230
+from sys import stdin
+a,b,c=map(int, stdin.readline().split())
+tunnel=[a,b,c]
+height=170
+
+for ii in tunnel:
+    if ii<=height:
+        print('CRASH', ii)
+        break
+else:
+    print('PASS')
