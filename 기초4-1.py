@@ -86,3 +86,152 @@ for ii in _list:
         break   
 else:
     print(0)
+
+# 1265
+n=int(input())
+for ii in range(1,10):
+    print(f'{n}*{ii}={n*ii}')
+
+# 1266
+n=int(input())
+numbers=list(map(int, input().split()))
+
+count=0
+for ii in numbers:
+    count+=ii
+    
+print(count)
+
+# 1267
+n=int(input())
+numbers=list(map(int, input().split()))
+
+count_5=0
+for ii in numbers:
+    if ii%5==0:
+        count_5+=ii
+        
+print(count_5)
+
+# 1268
+n=int(input())
+from sys import stdin
+numbers=list(map(int, stdin.readline().split()))
+
+count=0
+for ii in numbers:
+    if ii%2==0:
+        count+=1
+        
+print(count)
+
+# 1269
+a,b,c,n=map(int, input().split())
+for ii in range(1, n):
+    a=a*b+c
+    
+print(a)
+
+# 1270
+n=int(input())
+
+count=0
+for ii in range(1, n+1):
+    if ii%10==1:
+        count+=1
+        
+print(count)
+
+# 1271
+n=int(input())
+from sys import stdin
+numbers=list(map(int, stdin.readline().split()))
+
+num_max=numbers[0]
+for ii in numbers:
+    if num_max<ii:
+        num_max=ii
+
+print(num_max)
+
+# 1272
+A1.
+k,h = map(int, input().split())
+nums_list=[k,h]
+
+money=0
+for ii in nums_list:
+    if ii%2!=0:
+        money+=((ii//2)+1)
+    else:
+        money+=((ii//2)*10)
+        
+print(money)
+
+A2.
+nums_list = list(map(int, input().split()))
+
+money=0
+for ii in nums_list:
+    if ii%2!=0:
+        money+=((ii//2)+1)
+    else:
+        money+=((ii//2)*10)
+        
+print(money)
+
+# 1273
+A1.
+n=int(input())
+
+measure_list=[]
+for ii in range(1, n+1):
+    if n%ii==0:
+        measure_list.append(ii)
+        
+for i in measure_list:
+    print(i, end=' ')
+    
+A2.
+n=int(input())
+for ii in range(1, n+1):
+    if n%ii==0:
+        print(ii, end=' ')
+
+# 1274
+A1.
+n = int(input())
+now = 'prime'
+
+for i in range(2, n):
+    if n % i == 0:
+        now = 'not prime'
+        break
+
+print(now)
+
+A2.
+n = int(input())
+count = 1
+
+for i in range(2, n+1):
+    if n % i == 0:
+        count += 1
+
+if count > 2:
+    print('not prime')
+else:
+    print('prime')
+
+# 1275
+n,k=map(int, input().split())
+print(n**k)
+
+# 1276
+n=int(input())
+factorial_count=1
+
+for ii in range(1, n+1):
+    factorial_count*=ii
+    
+print(factorial_count)
