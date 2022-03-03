@@ -1,5 +1,6 @@
 ### CodeUp: Python 기초 Algorithm  
-* ```Python 기초 100제``` 기초 100제는 링크를 참고해주세요. : [기초 100제 정리 블로그](https://velog.io/@tino-kim?tag=%EA%B8%B0%EC%B4%88100%EC%A0%9C)
+* ```Python 기초 100제``` <br>
+✔ 기초 100제는 링크를 참고해주세요. : [기초 100제 정리 블로그](https://velog.io/@tino-kim?tag=%EA%B8%B0%EC%B4%88100%EC%A0%9C)
 * ```기초1. 출력문```
 * ```기초2. 입출력문 및 연산자```
 * ```기초3. if ~ else```
